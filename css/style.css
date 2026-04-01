@@ -77,6 +77,8 @@ nav a:hover{
 	display: flex;
 	align-items: center;
 	gap: 40px;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .about-container img{
