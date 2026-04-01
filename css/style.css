@@ -46,7 +46,7 @@ nav a:hover{
 	padding: 100px 60px;
 	background-color:rgba(0, 0, 0, 0.3); 
 	background-blend-mode: overlay;
-	background: url(https://i0.wp.com/awardswatch.com/wp-content/uploads/2014/05/best-actor-oscar-2000s.png);
+	background-image: url(https://www.taste.io/_next/image?url=%2Fimages%2Fhero.jpg&w=3840&q=75);
 }
 .hero::before{
 	content: "";
