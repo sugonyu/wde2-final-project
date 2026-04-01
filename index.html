@@ -1,28 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDE2 Final Project</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>WDE2 Final Project</h1>
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./pages/about.html">About</a>
-        <a href="./pages/contact.html">Contact</a>
-      </nav>
-    </header>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MovieWorld</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--nav -->
+	<nav>
+		<h1 class="logo"> MovieWorld</h1>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="#latest">Latest</a></li>
+			<li><a href="#classic">Classics</a></li>
+			<li><a href="#rated">Top Rated</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-    <main>
-      <section>
-        <h2>Placeholder Home</h2>
-        <p>This is the starter page for the team project website.</p>
-      </section>
-    </main>
+	<!--Hero -->
+	<section class="hero">
+		<h2> Discover Movies Like Never Before</h2>
+		<p> Modern . Clean. Cinematic</p>
+	</section>
 
-    <script src="./js/main.js"></script>
-  </body>
+	<!-- About -->
+	<section class="about">
+		<div class="about-container">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNGITE1zbUDbS_FYzJDOrPkDA8Cc2-MLCjcMB0rx-HW0pWwoKws8WbgSML1mv4xD2me4z9&s=10">
+			<div class="about-text">
+				<h2>About Movie World</h2>
+				<p>
+					Movie World is your place to explore movies across all genres.
+					From timeless classics to modern masterpieces, we present films in a clean and structured way so you can enjoy discovering them.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Latest -->
+	<section class="movies" id="latest">
+		<h2> Latest Movies</h2>
+		<div class="card-container">
+
+			<div class="card">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNGITE1zbUDbS_FYzJDOrPkDA8Cc2-MLCjcMB0rx-HW0pWwoKws8WbgSML1mv4xD2me4z9&s=10">
+				<div class="card-content">
+					<h3 class="movie-title">God Father</h3>
+					<p><b>Genre:</b>Action/Drama</p>
+					<p><b>Director:</b>Francis Ford Coppola</p>
+					<p><b>Actors:</b>Al Pacino</p>
+					<p class="desc"><b>Description:</b>Widely regarded as one of the greatest films of all time, this mob drama, based on Mario Puzo's novel.</p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="">
+				<div class="card-content">
+					<h3 class="movie-title">Inception</h3>
+					<p><b>Genre:</b></p>
+					<p><b>Director:</b></p>
+					<p><b>Actors:</b></p>
+					<p class="desc"><b>Description:</b></p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="">
+				<div class="card-content">
+					<h3 class="movie-title">Inception</h3>
+					<p><b>Genre:</b></p>
+					<p><b>Director:</b></p>
+					<p><b>Actors:</b></p>
+					<p class="desc"><b>Description:</b></p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Classics -->
+	<section class="movies" id="classic">
+		<h2> Classic Movies</h2>
+		<div class="card-container">
+
+			<div class="card">
+				<img src="">
+				<div class="card-content">
+					<h3 class="movie-title">Inception</h3>
+					<p><b>Genre:</b></p>
+					<p><b>Director:</b></p>
+					<p><b>Actors:</b></p>
+					<p class="desc"><b>Description:</b></p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="">
+				<div class="card-content">
+					<h3 class="movie-title">Inception</h3>
+					<p><b>Genre:</b></p>
+					<p><b>Director:</b></p>
+					<p><b>Actors:</b></p>
+					<p class="desc"><b>Description:</b></p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="">
+				<div class="card-content">
+					<h3 class="movie-title">Inception</h3>
+					<p><b>Genre:</b></p>
+					<p><b>Director:</b></p>
+					<p><b>Actors:</b></p>
+					<p class="desc"><b>Description:</b></p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Top rated -->
+	<section class="movies" id="rated">
+		<h2> Best Rated Movies</h2>
+		<div class="card-container">
+
+			<div class="card">
+				<img src="">
+				<div class="card-content">
+					<h3 class="movie-title">Inception</h3>
+					<p><b>Genre:</b></p>
+					<p><b>Director:</b></p>
+					<p><b>Actors:</b></p>
+					<p class="desc"><b>Description:</b></p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="">
+				<div class="card-content">
+					<h3 class="movie-title">Inception</h3>
+					<p><b>Genre:</b></p>
+					<p><b>Director:</b></p>
+					<p><b>Actors:</b></p>
+					<p class="desc"><b>Description:</b></p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="">
+				<div class="card-content">
+					<h3 class="movie-title">Inception</h3>
+					<p><b>Genre:</b></p>
+					<p><b>Director:</b></p>
+					<p><b>Actors:</b></p>
+					<p class="desc"><b>Description:</b></p>
+					<a href="" target="_blank" class="btn">Trailer</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer-container">
+			
+			<!-- Brand -->
+		<div class="footer-section">
+			<h2> MovieWorld</h2>
+			<p> Your Place to discover amazing Movies anytime</p>
+		</div>
+
+	<!--links -->
+	<div class="footer-section">
+		<h3>Quick Links</h3>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#latest">Latest</a></li>
+			<li><a href="#classic">Classics</a></li>
+			<li><a href="#rated">Top Rated</a></li>
+		</ul>
+	</div>
+
+	<!-- footer contact -->
+	<div class="footer-section" id="contact">
+		<h3> Contact</h3>
+		<p>Email: movieworld@emmail.com</p>
+		<p>Phone: +1 514-000-0000</p>
+		<p>Location : Montreal, Canada</p>
+	</div>
+	
+	<!--Legal -->
+	<div class="footer-section">
+		<h3>Legal</h3>
+		<ul>
+			<li><a href="#">Terms & Conditions</a></li>
+			<li><a href="#">Privacy & Policy</a></li>
+
+		</ul>
+	</div>
+</div>
+	<div class="footer-bottom">
+		<p>&copy 2026 MovieWorld | All Rights Reserved</p>
+	</div>
+
+</footer>
+</body>
 </html>
