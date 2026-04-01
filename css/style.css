@@ -211,3 +211,52 @@ nav a:hover{
 	color: #777;
 
 }
+
+/*Random Section*/
+.random-movie {
+	background-color: rgba(0, 0, 0, 0.65);
+	height:400px ;
+	background-image: url(https://external-preview.redd.it/collage-of-movie-posters-my-gf-put-together-awhile-back-v0--DobWIgRbcMv7FJUmWeen-Cj1V4m2QWWkZ1VMciK3uA.jpg?auto=webp&s=3b377e5cc1f9e39fa10429cc4c025bb738c4f290);
+	display: flex;
+	object-fit: cover;
+	background-blend-mode: multiply;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.random-container h2{
+	color: #3BB8DB;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.random-container p{
+	color: whitesmoke;
+	margin-bottom: 20px;
+}
+.random-btn{
+	padding: 12px 30px;
+	font-size: 20px;
+	border: none;
+	border-radius: 30px;
+	background: #3BB8DB;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.random-btn:hover{
+	transform: scale(1.1);
+	background: #ff1e2d;
+}
+.modal{
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s;
+}
+
+.modal.active{
+	opacity: 1;
+	pointer-events: all;
+}
