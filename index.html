@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MovieWorld</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<!--nav -->
@@ -172,6 +172,49 @@
 
 		</div>
 	</section>
+
+	<!-- modal random display -->
+	<section class="random-movie">
+		<div class="random-container">
+			<h2>Not Sure What to Watch</h2>
+			<p>Let Us Pick Something Amazing For You</p>
+			<button class="random-btn" id="randomBtn">Surprise me</button>
+		</div>
+	</section>
+	<div id="movieModal" class="modal">
+		<!-- backgorund overlay -->
+		<div class="modal-overlay" id="closeModal"></div>
+
+		<!-- content -->
+		<div class="modal-content">
+			
+			<!-- close button-->
+			<span class="close-btn" id="closeBtn">&times</span>
+
+			<!-- movieCard -->
+			<div class="modal-card">
+				
+				<!-- Poster -->
+				<div class="modal-image">
+					<img src="placeholder.jpg" alt="Movie Poster" id="modalPoster">
+				</div>
+
+				<!-- info -->
+				<div class="modal-info">
+					<h3 id="modalTitle">Movie title</h3>
+					<p id="modaldescription">short description of the movie will apear here</p>
+
+					<!--trailer -->
+					<div class="trailer-container">
+						<iframe id="modalTrailer"src="" frameborder="0" allowfullscreen>
+						</iframe>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
 
 	<!-- footer -->
 	<footer class="footer">
