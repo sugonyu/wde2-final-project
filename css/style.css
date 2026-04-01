@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+}
+
+body{
+	background: black;
+	color: white;
+}
+/*Nav*/
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 50px;
+	background: #050510;
+	border-bottom: 2px solid #3BB8DB;
+}
+
+.logo{
+	color: #3BB8DB;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	gap: 25px;
+}
+
+nav a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #3BB8DB;
+}
+
+/*hero*/
+
+.hero{
+	text-align: center;
+	padding: 100px 60px;
+	background: url(https://i0.wp.com/awardswatch.com/wp-content/uploads/2014/05/best-actor-oscar-2000s.png);
+}
+
+.hero h2{
+	color: #3BB8DB;
+}
+
+/*about*/
+
+.about{
+	padding: 60px;
+}
+
+.about-container{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.about-container img{
+	width: 420px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.about-text	{
+	max-width: 500px;
+}
+
+/*Movies*/
+
+.movies{
+	padding: 60px;
+}
+
+.movies h2{
+	text-align: center;
+	margin-bottom: 30px;
+	color: #00e5ff;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+
+}
+
+/*card*/
+.card{
+	display: flex;
+	width: 360px;
+	background: #111;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.card img{
+	width: 140px;
+	object-fit: cover;
+}
+
+.card-content{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-content h3{
+	color: #3BB8DB;
+}
+
+.desc{
+	margin-top: 5px;
+	font-size: 13px;
+}
+
+/*button*/
+
+.btn{
+	margin-top: auto;
+	align-self: center;
+	background: #3BB8DB;
+	color: black;
+	padding: 5px 12px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+/*footer*/
+
+.footer{
+	background: #050510;
+	border-top: 2px solid #3BB8DB;
+	padding: 40px 60px 20px;
+}
+
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.footer-section{
+	max-width: 250px;
+}
+
+.footer-section h2,
+.footer-section h3{
+	color: #3BB8DB;
+	margin-bottom: 10px;
+}
+
+.footer-section p{
+	font-size: 14px;
+	color: #bbb;
+	margin-bottom: 5px;
+}
+
+/*links*/
+.footer-section ul{
+	list-style: none;
+}
+.footer-section ul li{
+	margin-bottom: 5px;
+}
+.footer-section a {
+	text-decoration: none;
+	color: #ccc;
+	font-size: 14px;
+	transition: 0.3s;
+}
+.footer-section a:hover{
+	color: #3BB8DB;
+}
+
+.footer-bottom{
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 15px;
+	border-top: 1px solid #222;
+	font-size: 13px;
+	color: #777;
+
+}
