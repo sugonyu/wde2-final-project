@@ -1,0 +1,97 @@
+const movieData = {
+  latest: [
+    {
+      title: "Peaky Blinders: The Immortal Man",
+      genre: "Action/Drama",
+      director: "Tom Harper",
+      actors: ["Cillian Murphy", "Rebecca Ferguson", "Barry Keoghan"],
+      description: "A gripping tale of power, loyalty, and a man who seems untouchable.",
+      poster: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/Peaky_Blinders_-_The_Immortal_Man_poster.jpg/250px-Peaky_Blinders_-_The_Immortal_Man_poster.jpg",
+      trailer: "https://www.youtube.com/watch?v=lcvUGs3xaDM"
+    },
+    {
+      title: "War Machine",
+      genre: "Sci-Fi/Action",
+      director: "Patrick Hughes",
+      actors: ["Alan Ritchson", "Dennis Quaid", "Stephen James"],
+      description: "A high-octane saga where strategy, firepower, and survival collide.",
+      poster: "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/War_Machine_poster.jpeg/250px-War_Machine_poster.jpeg",
+      trailer: "https://www.youtube.com/watch?v=AFuE1LRxm80"
+    },
+    {
+      title: "A Private Life",
+      genre: "Mystery/Crime",
+      director: "Rebecca Zlotowski",
+      actors: ["Jodie Foster", "Daniel Auteuil"],
+      description: "A quiet, intimate story where hidden truths and personal struggles unfold behind closed doors.",
+      poster: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/A_Private_Life_poster.jpg/250px-A_Private_Life_poster.jpg",
+      trailer: "https://www.youtube.com/watch?v=HbIEbJbEpF4"
+    }
+  ],
+  classics: [
+    {
+      title: "My Neighbor Totoro",
+      genre: "Animation/Family",
+      director: "Hayao Miyazaki",
+      actors: ["Hitoshi Takagi", "Noriko Hidaka", "Chika Sakamoto"],
+      description: "Two girls move to the countryside and discover friendly forest spirits near their new home.",
+      poster: "https://m.media-amazon.com/images/M/MV5BYWM3MDE3YjEtMzIzZC00ODE5LTgxNTItNmUyMTBkM2M2NmNiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      trailer: "https://youtu.be/HaLISMAGdOE?si=qqpSkja8Lf8_mf49"
+    },
+    {
+      title: "Jaws",
+      genre: "Monster Horror/Thriller",
+      director: "Steven Spielberg",
+      actors: ["Roy Scheider", "Robert Shaw", "Richard Dreyfuss"],
+      description: "A beach community is terrorized by a killer shark, forcing an unlikely trio to hunt it down.",
+      poster: "https://static.wikia.nocookie.net/jaws/images/d/da/Jaws-movie-poster.jpg/revision/latest/scale-to-width-down/1200?cb=20131015071208",
+      trailer: "https://youtu.be/U1fu_sA7XhE?si=ZtFPHHGMCImQXvC3"
+    },
+    {
+      title: "Up",
+      genre: "Animation/Adventure",
+      director: "Pete Docter, Bob Peterson",
+      actors: ["Edward Asner", "Jordan Nagai", "John Ratzenberger"],
+      description: "A widower lifts his house with balloons and begins an unexpected adventure with a young stowaway.",
+      poster: "https://m.media-amazon.com/images/I/71MRrvu3zPL.jpg",
+      trailer: "https://youtu.be/HWEW_qTLSEE?si=QW6pNuCKkHSKIvvs"
+    }
+  ],
+  rated: [
+    {
+      title: "The Shawshank Redemption",
+      genre: "Drama",
+      director: "Frank Darabont",
+      actors: ["Tim Robbins", "Morgan Freeman"],
+      description: "A powerful prison drama about hope, friendship, and resilience.",
+      poster: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRQY22fAfc4eI-8Fpg12E7d7O68wz0uqJvXHunh8l3Xbg1T6Np",
+      trailer: "https://www.youtube.com/watch?v=NmzuHjWmXOc"
+    },
+    {
+      title: "Parasite",
+      genre: "Thriller/Drama",
+      director: "Bong Joon-ho",
+      actors: ["Song Kang-ho", "Choi Woo-shik", "Park So-dam"],
+      description: "A Korean masterpiece that explores class inequality through a suspenseful story.",
+      poster: "https://img.rgstatic.com/content/movie/c03f0e9b-aca0-467b-8137-39e5b92d33fa/poster-342.webp",
+      trailer: "https://www.youtube.com/watch?v=5xH0HfJHsaY"
+    },
+    {
+      title: "The Social Network",
+      genre: "Biography/Drama",
+      director: "David Fincher",
+      actors: ["Jesse Eisenberg", "Andrew Garfield"],
+      description: "A fast-paced film about the founding of Facebook and the cost of success.",
+      poster: "https://m.media-amazon.com/images/S/pv-target-images/ea4f1c75ddd9fd937a77875d48f9ce8225ed954afcefabe7a2195311b1a97ddd.jpg",
+      trailer: "https://www.youtube.com/watch?v=lB95KLmpLR4"
+    }
+  ]
+};
+
+if (typeof window !== 'undefined') {
+  window.movieData = movieData;
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = movieData;
+}

@@ -1,10 +1,7 @@
-import fs from 'fs';
+const movies = require('../data/movies-data.js');
 
-const raw = fs.readFileSync('./data/movies.json', 'utf-8');
-const movies = JSON.parse(raw);
-
-console.log('Movie JSON Test');
-console.log('----------------');
+console.log('Movie Data Test');
+console.log('---------------');
 console.log('Latest movies:', movies.latest.length);
 console.log('Classic movies:', movies.classics.length);
 console.log('Best rated movies:', movies.rated.length);
