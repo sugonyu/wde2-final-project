@@ -25,7 +25,7 @@ _The wireframe concept we brainstormed together._
 In your local environment, clone the repository. Make sure to pull changes to the repository before each work session to help avoid difficulties with merging changes when you push your changes to the GitHub repository. If you are using GitHub desktop, you can stash and restore the changes in your branch after pulling from the main repository to keep the work you have done while implementing the changes other team members have pushed to the main repository.
 
 ### Project Build
-We have created the main sections for the webpage: Hero, About, Latest Movies, Classic Movies, Best Rated Movies, and a Random Movie Selector. The project keeps shared movie data in `data/movies-data.js`. Production scripts are placed in the `js` folder, while test and demo scripts are placed in the `scripts` folder. `main.js` renders the movie cards dynamically, and `random-movie.js` shows a random movie in the modal when the Surprise Me button is clicked.
+We have created the main sections for the webpage: Hero, About, Latest Movies, Classic Movies, Best Rated Movies, and a Random Movie Selector. The project keeps shared movie data in `data/movies-data.js`. Production scripts are placed in the `js` folder, test scripts are placed in the `scripts` folder, and demo pages are placed in the `demos` folder. `main.js` renders the movie cards dynamically, and `random-movie.js` shows a random movie in the modal when the Surprise Me button is clicked.
 
 |             | Root contents | Subfolder contents |
 | ----------- | ------------- | ------------------ |
@@ -38,7 +38,9 @@ We have created the main sections for the webpage: Hero, About, Latest Movies, C
 |             |               | main.js            |
 |             |               | random-movie.js    |
 |             | **scripts**   |                    |
-|             |               | test and demo files |
+|             |               | test JS files      |
+|             | **demos**     |                    |
+|             |               | movies-demo.html   |
 |             | index.html    |                    |
 |             | README.md     |                    |
 
