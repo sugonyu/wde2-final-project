@@ -251,12 +251,79 @@ nav a:hover{
 	background: #ff1e2d;
 }
 .modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 0.3s;
+	z-index: 1000;
 }
 
 .modal.active{
 	opacity: 1;
 	pointer-events: all;
+}
+
+.modal-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.modal-content{
+	position: relative;
+	width: 80%;
+	max-width: 800px;
+	margin: 40px auto;
+	background: #111;
+	border: 1px solid #3BB8DB;
+	padding: 20px;
+	z-index: 1001;
+}
+
+.close-btn{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 28px;
+	color: #3BB8DB;
+	cursor: pointer;
+}
+
+.modal-card{
+	display: flex;
+	gap: 20px;
+}
+
+.modal-image img{
+	width: 220px;
+	height: 320px;
+	object-fit: cover;
+}
+
+.modal-info{
+	flex: 1;
+}
+
+.modal-info h3{
+	color: #3BB8DB;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.modal-info p{
+	color: #ddd;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+.trailer-container iframe{
+	width: 100%;
+	height: 220px;
 }
