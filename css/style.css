@@ -236,94 +236,141 @@ nav a:hover{
 	margin-bottom: 20px;
 }
 .random-btn{
-	padding: 12px 30px;
-	font-size: 20px;
 	border: none;
-	border-radius: 30px;
-	background: #3BB8DB;
-	color: black;
+	background: none;
+	display: inline-block;
 	cursor: pointer;
-	transition: 0.3s;
+
+	position: relative;
+	padding: 0;
 }
 
-.random-btn:hover{
-	transform: scale(1.1);
-	background: #ff1e2d;
+.clap-top{
+	width: 220px;
+	height: 35px;
+	background: repeating-linear-gradient(
+		45deg,
+		#000,
+		#000 10px,
+		#fff 10px,
+		#fff 20px);
+	border-radius: 5px 5px 0 0;
+	transform-origin: left;
+	transition: 0.2s;
 }
+
+/*bottom part for the clapper*/
+.clap-bottom{
+	width:220px;
+	height: 65px;
+	background: #111;
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 0 5px 5px;
+}
+.random-btn:hover{
+
+	transform: rotate(-10deg);
+}
+/*changes in modal*/
 .modal{
 	position: fixed;
+	align-items: flex-start;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	opacity: 0;
+	display: flex;
+	justify-content: center;
 	pointer-events: none;
+	opacity: 0;
 	transition: opacity 0.3s;
 	z-index: 1000;
+	background: rgba(0,0,0,0.6);
 }
 
 .modal.active{
 	opacity: 1;
 	pointer-events: all;
 }
-
-.modal-overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.75);
-}
-
+/*changes in modal content*/
 .modal-content{
 	position: relative;
-	width: 80%;
-	max-width: 800px;
-	margin: 40px auto;
 	background: #111;
-	border: 1px solid #3BB8DB;
 	padding: 20px;
+	border-radius: 10px;
+	max-width: 700px;
+	max-height: calc(100% - 100px);
+	overflow-y: auto;
+	width: 80%;
+	color: white;
+	margin: 40px auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	z-index: 1001;
 }
-
+/*changes for close button*/
 .close-btn{
 	position: absolute;
 	top: 10px;
 	right: 15px;
-	font-size: 28px;
-	color: #3BB8DB;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
 	cursor: pointer;
+	z-index: 1002;
+}
+.close-btn:hover{
+	color: #f00;
 }
 
+/*changes in modal card*/
 .modal-card{
 	display: flex;
-	gap: 20px;
+	gap: 15px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
-
+/*changes in modal image*/
 .modal-image img{
-	width: 220px;
-	height: 320px;
-	object-fit: cover;
+	width: 100%;
+	border-radius: 10px;
+
 }
 
-.modal-info{
-	flex: 1;
-}
-
-.modal-info h3{
-	color: #3BB8DB;
-	font-size: 24px;
-	margin-bottom: 10px;
-}
-
-.modal-info p{
-	color: #ddd;
-	line-height: 1.5;
-	margin-bottom: 15px;
-}
-
+/*changes in trailer container*/
 .trailer-container iframe{
 	width: 100%;
-	height: 220px;
+	height: 300px;
+	border-radius: 10px;
+	margin-top: 10px;
 }
+
+/*popcorn the pop ups gold*/
+.popcorn{
+	position: absolute;
+	background: #fff8dc;
+	width: 18px;
+	height: 18px;
+	border-radius: 50% 60% 40% 70%;
+	animation: pop 0.9s ease-out forwards;
+	z-index: 9999;
+	pointer-events: none;
+	
+}
+@keyframes pop{
+	0% {
+		transform: translate(0, 0) scale(1) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(var(--x), var(--y)) scale(0.4) rotate(720deg);
+		opacity: 0 ;
+	
+	}
+}}
