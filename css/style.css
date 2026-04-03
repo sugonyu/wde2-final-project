@@ -311,6 +311,7 @@ p.desc{
 .modal-content{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	position: relative;
 	background: #111;
 	padding: 20px;
