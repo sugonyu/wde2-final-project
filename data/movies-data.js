@@ -2,8 +2,8 @@ const movieData = {
   latest: [
     {
       title: "Peaky Blinders: The Immortal Man",
-      genre: "Action/Drama",
-      director: "Tom Harper",
+      genre: ["Action", "Drama"],
+      director: ["Tom Harper"],
       actors: ["Cilian Murphy", "Rebecca Ferguson", "Barry Keoghan"],
       description: "A Gripping tale of Power, Loyalty, and a man who seems Untouchable.",
       poster: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/Peaky_Blinders_-_The_Immortal_Man_poster.jpg/250px-Peaky_Blinders_-_The_Immortal_Man_poster.jpg",
@@ -11,8 +11,8 @@ const movieData = {
     },
     {
       title: "War Machine",
-      genre: "Sci-Fi/Action",
-      director: "Patrick Hughes",
+      genre: ["Sci-Fi", "Action"],
+      director: ["Patrick Hughes"],
       actors: ["Alan Ritchson", "Dennis Quaid", "Stephen James"],
       description: "A High Octane - Saga where Strategy Firepower and survival collide.",
       poster: "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/War_Machine_poster.jpeg/250px-War_Machine_poster.jpeg",
@@ -20,8 +20,8 @@ const movieData = {
     },
     {
       title: "A Private Life",
-      genre: "Mystery/Crime",
-      director: "Rebecca Zlotowlski",
+      genre: ["Mystery" , "Crime"],
+      director: ["Rebecca Zlotowlski"],
       actors: ["Jodie Foster", "Daniel Auteuil"],
       description: "A Quiet intimate story where hidden truths and personal struggles unfold behind closed doors.",
       poster: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/A_Private_Life_poster.jpg/250px-A_Private_Life_poster.jpg",
@@ -31,8 +31,8 @@ const movieData = {
   classics: [
     {
       title: "My Neighbor Totoro",
-      genre: "Animation/Family",
-      director: "Hayao Miyazaki",
+      genre: ["Animation", "Family"],
+      director: ["Hayao Miyazaki"],
       actors: ["Hitoshi Takagi", "Noriko Hidaka", "Chika Sakamoto"],
       description: "When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.",
       poster: "https://m.media-amazon.com/images/M/MV5BYWM3MDE3YjEtMzIzZC00ODE5LTgxNTItNmUyMTBkM2M2NmNiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
@@ -40,8 +40,8 @@ const movieData = {
     },
     {
       title: "Jaws",
-      genre: "Monster Horror/Thriller",
-      director: "Steven Spielberg",
+      genre: ["Monster Horror", "Thriller"],
+      director: ["Steven Spielberg"],
       actors: ["Roy Scheider", "Robert Shaw", "Richard Dreyfuss"],
       description: "When a massive killer shark unleashes chaos on a beach community off Long Island, it's up to the local police chief, a marine biologist, and an old seafarer to hunt the beast down.",
       poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/192/2021/05/10145225/l1yltvzILaZcx2jYvc5sEMkM7Eh.jpg",
@@ -49,8 +49,8 @@ const movieData = {
     },
     {
       title: "Up",
-      genre: "Animation/Coming-of-Age/Adventure",
-      director: "Pete Docter, Bob Peterson",
+      genre: ["Animation", "Coming-of-Age", "Adventure"],
+      director: ["Pete Docter", "Bob Peterson"],
       actors: ["Edward Asner", "Jordan Nagai", "John Ratzenberger"],
       description: "78-year-old Carl Fredricksen travels to South America in his house equipped with balloons, inadvertently taking a young stowaway.",
       poster: "https://m.media-amazon.com/images/I/71MRrvu3zPL.jpg",
@@ -60,8 +60,8 @@ const movieData = {
   rated: [
     {
       title: "The Shawshank Redemption",
-      genre: "Drama",
-      director: "Frank Darabont",
+      genre: ["Drama"],
+      director: ["Frank Darabont"],
       actors: ["Tim Robbins", "Morgan Freeman"],
       description: "A powerful prison drama about hope, friendship, and resilience. It is widely considered one of the greatest films ever made.",
       poster: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRQY22fAfc4eI-8Fpg12E7d7O68wz0uqJvXHunh8l3Xbg1T6Np",
@@ -69,8 +69,8 @@ const movieData = {
     },
     {
       title: "Parasite",
-      genre: "Thriller/Drama",
-      director: "Bong Joon-ho",
+      genre: ["Thriller", "Drama"],
+      director: ["Bong Joon-ho"],
       actors: ["Song Kang-ho", "Choi Woo-shik", "Park So-dam"],
       description: "A Korean masterpiece that explores class inequality through a suspenseful and unpredictable story. It became a global hit and won multiple Academy Awards.",
       poster: "https://img.rgstatic.com/content/movie/c03f0e9b-aca0-467b-8137-39e5b92d33fa/poster-342.webp",
@@ -78,8 +78,8 @@ const movieData = {
     },
     {
       title: "The Social Network",
-      genre: "Biography/Drama",
-      director: "David Fincher",
+      genre: ["Biography", "Drama"],
+      director: ["David Fincher"],
       actors: ["Jesse Eisenberg", "Andrew Garfield"],
       description: "A sharp and fast-paced film about the founding of Facebook, ambition, coding culture, and the cost of success.",
       poster: "https://m.media-amazon.com/images/S/pv-target-images/ea4f1c75ddd9fd937a77875d48f9ce8225ed954afcefabe7a2195311b1a97ddd.jpg",

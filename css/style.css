@@ -9,6 +9,22 @@ body{
 	background: black;
 	color: white;
 }
+
+body.noScroll{
+	height: 100%;
+	overflow-y: hidden;
+}
+
+section{
+	padding: 60px 0;
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 /*Nav*/
 
 nav{
@@ -27,6 +43,7 @@ nav ul{
 	display: flex;
 	list-style: none;
 	gap: 25px;
+	align-items: center;
 }
 
 nav a {
@@ -39,7 +56,6 @@ nav a:hover{
 }
 
 /*hero*/
-
 .hero{
 	position: relative;
 	text-align: center;
@@ -68,38 +84,28 @@ nav a:hover{
 }
 
 /*about*/
-
-.about{
-	padding: 60px;
-}
-
-.about-container{
+.about-flex{
 	display: flex;
 	align-items: center;
 	gap: 40px;
-	max-width: 1000px;
-	margin: 0 auto;
 }
 
-.about-container img{
-	width: 420px;
+.about-flex img{
+	width: 40%;
 	height: 300px;
 	object-fit: cover;
 }
 
 .about-text	{
+	width: 60%;
 	max-width: 500px;
 }
 .about-text	h2{
 	font-size: 30px;
 	margin-bottom: 20px;
 }
+
 /*Movies*/
-
-.movies{
-	padding: 60px;
-}
-
 .movies h2{
 	text-align: center;
 	margin-bottom: 30px;
@@ -107,55 +113,61 @@ nav a:hover{
 }
 
 .card-container {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 25px;
-
 }
 
 /*card*/
 .card{
 	display: flex;
-	width: 400px;
 	background: #111;
 	border-radius: 10px;
 	overflow: hidden;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.20);
 }
 
 .card img{
-	width: 140px;
+	width: 40%;
 	object-fit: cover;
 }
 
 .card-content{
+	width: 60%;
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
+	gap: 5px;
+	justify-content: space-between;
 }
 
 .card-content h3{
 	color: #3BB8DB;
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
-.desc{
+.card-content p{
+	font-size: 16px;
+}
+
+p.desc{
 	margin-top: 5px;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 /*button*/
-
 .btn{
-	margin-top: auto;
-	align-self: center;
+	margin-top: 10px;
+	align-self: end;
 	background: #3BB8DB;
 	color: black;
 	padding: 5px 12px;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 /*footer*/
-
 .footer{
 	background: #050510;
 	border-top: 2px solid #3BB8DB;
@@ -207,31 +219,30 @@ nav a:hover{
 	margin-top: 30px;
 	padding-top: 15px;
 	border-top: 1px solid #222;
-	font-size: 13px;
+	font-size: 14px;
 	color: #777;
 
 }
 
 /*Random Section*/
 .random-movie {
-	background-color: rgba(0, 0, 0, 0.65);
 	height:400px ;
 	background-image: url(https://external-preview.redd.it/collage-of-movie-posters-my-gf-put-together-awhile-back-v0--DobWIgRbcMv7FJUmWeen-Cj1V4m2QWWkZ1VMciK3uA.jpg?auto=webp&s=3b377e5cc1f9e39fa10429cc4c025bb738c4f290);
-	display: flex;
-	object-fit: cover;
+	background-color: rgba(0, 0, 0, 0.65);
 	background-blend-mode: multiply;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 }
 
-.random-container h2{
+.random-movie  h2{
 	color: #3BB8DB;
 	font-size: 50px;
 	margin-bottom: 10px;
 }
 
-.random-container p{
+.random-movie p{
 	color: whitesmoke;
 	margin-bottom: 20px;
 }
@@ -279,8 +290,6 @@ nav a:hover{
 .modal{
 	position: fixed;
 	align-items: flex-start;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -300,12 +309,14 @@ nav a:hover{
 }
 /*changes in modal content*/
 .modal-content{
+	display: flex;
+	align-items: center;
 	position: relative;
 	background: #111;
 	padding: 20px;
 	border-radius: 10px;
-	max-width: 700px;
-	max-height: calc(100% - 100px);
+	max-width: 900px;
+	height: 80vh;
 	overflow-y: auto;
 	width: 80%;
 	color: white;
@@ -332,15 +343,27 @@ nav a:hover{
 .modal-card{
 	display: flex;
 	gap: 15px;
-	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
 /*changes in modal image*/
+.modal-image{
+	width: 40%;
+}
+
 .modal-image img{
 	width: 100%;
 	border-radius: 10px;
+}
 
+.modal-info{
+	width: 60%;
+}
+
+.modal-info h3{
+	color: #3BB8DB;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 
 /*changes in trailer container*/
@@ -363,6 +386,7 @@ nav a:hover{
 	pointer-events: none;
 	
 }
+
 @keyframes pop{
 	0% {
 		transform: translate(0, 0) scale(1) rotate(0deg);
@@ -373,4 +397,30 @@ nav a:hover{
 		opacity: 0 ;
 	
 	}
-}}
+}
+
+/* Media Query */
+@media only screen and (max-width: 992px){
+	.card-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.card-container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.modal-content{
+		align-items: start;
+	}
+
+	.modal-card{
+		flex-direction: column;
+	}
+
+	.modal-card .modal-image,
+	.modal-card .modal-info{
+		width: 100%;
+	}
+}

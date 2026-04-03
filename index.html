@@ -21,52 +21,68 @@
 
 	<!--Hero -->
 	<section class="hero">
-		<p> Modern . Clean. Cinematic</p>
-		<h2> Discover Movies Like Never Before</h2>
+		<div class="container">
+			<p> Modern . Clean. Cinematic</p>
+			<h2> Discover Movies Like Never Before</h2>
+		</div>
 	</section>
 
 	<!-- About -->
 	<section class="about">
-		<div class="about-container">
-			<img src="https://www.subtraction.com/wp-content/uploads/2018/01/2018-01-04-2017-movies-watched.jpg">
-			<div class="about-text">
-				<h2>About Movie World</h2>
-				<p>
-					Movie World is your place to explore movies across all genres.
-					From timeless classics to modern masterpieces, we present films in a clean and structured way so you can enjoy discovering them.Browse top-rated-titles, hidden gems, and classics all your favorites in one place. Dive into detailed insights, ratings and stories that bring every film to life.
-				</p>
+		<div class="container">
+			<div class="about-flex">
+				<img src="https://www.subtraction.com/wp-content/uploads/2018/01/2018-01-04-2017-movies-watched.jpg">
+				<div class="about-text">
+					<h2>About Movie World</h2>
+					<p>
+						Movie World is your place to explore movies across all genres.
+						From timeless classics to modern masterpieces, we present films in a clean and structured way so you can enjoy discovering them.Browse top-rated-titles, hidden gems, and classics all your favorites in one place. Dive into detailed insights, ratings and stories that bring every film to life.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Latest -->
 	<section class="movies" id="latest">
-		<h2> Latest Movies</h2>
-		<div class="card-container" id="latestContainer"></div>
+		<div class="container">
+			<h2> Latest Movies</h2>
+			<div class="card-container" id="latestContainer"></div>
+		</div>
 	</section>
 
 	<!-- Classics -->
 	<section class="movies" id="classic">
-		<h2> Classic Movies</h2>
-		<div class="card-container" id="classicContainer"></div>
+		<div class="container">
+			<h2> Classic Movies</h2>
+			<div class="card-container" id="classicContainer"></div>
+		</div>
 	</section>
 
 	<!-- Top rated -->
 	<section class="movies" id="rated">
-		<h2> Best Rated Movies</h2>
-		<div class="card-container" id="ratedContainer"></div>
+		<div class="container">
+			<h2> Best Rated Movies</h2>
+			<div class="card-container" id="ratedContainer"></div>
+		</div>
 	</section>
 
 	<!-- modal random display -->
 	<section class="random-movie">
-		<div class="random-container">
-			<h2>Not Sure What to Watch</h2>
-			<p>Let Us Pick Something Amazing For You</p>
-			<button class="random-btn" id="randomBtn">Surprise me</button>
+		<div class="container">
+			<h2>Not Sure What to Watch?</h2>
+			<p>Let Us Pick Something Amazing For You!</p>
+			
+			<button class="random-btn" id="randomBtn">
+				<div class="clap-top"></div>
+				<div class="clap-bottom">Surprise me</div>
+			</button>
 		</div>
 	</section>
+
+	<!-- modal -->
 	<div id="movieModal" class="modal">
-		<!-- backgorund overlay -->
+		<!-- background overlay -->
 		<div class="modal-overlay" id="closeModal"></div>
 
 		<!-- content -->

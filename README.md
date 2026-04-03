@@ -1,12 +1,13 @@
 # MovieWorld Website
 [Trello Board](https://trello.com/invite/b/69cc318200b954546fb48caa/ATTI81d760ca96e33f144cbc53deeb6a087033A03914/web-development-environment-2-final-project)
+[GitHub Repository](https://github.com/sugonyu/wde2-final-project.git)
 
 ## The Team
-| Team Member | Role |
-| --- | ---|
-| **Muhamed Karim Kahil** | Lead Frontend Developer | 
-| **(Tony) Soo Gun Yu** | DevOps / Git Lead |
-| **Kylene Anne Aguila** | Documentation Lead |
+| Team Member                  | Role                    |
+| ---------------------------- | ----------------------- |
+| **(Mo) Muhamed Karim Kahil** | Lead Frontend Developer | 
+| **(Tony) Soo Gun Yu**        | DevOps / Git Lead       |
+| **Kylene Anne Aguila**       | Documentation Lead      |
 
 ## Concept
 We created this website to display and discover some of the world's best movies. 
