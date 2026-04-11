@@ -6,7 +6,7 @@
 | Team Member                  | Role                    |
 | ---------------------------- | ----------------------- |
 | **(Mo) Muhamed Karim Kahil** | Lead Frontend Developer | 
-| **(Tony) Soo Gun Yu**        | DevOps / Git Lead       |
+| **(Tony) T. S. Yu**        | DevOps / Git Lead       |
 | **Kylene Anne Aguila**       | Documentation Lead      |
 
 ## Concept
